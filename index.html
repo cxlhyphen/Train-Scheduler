@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Reset -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/custom.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+
+    <style>
+        .background {
+            background-image: url("assets/images/michal-parzuchowski-262751-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-position: center; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="jumbotron w-100 text-center text-white border-bottom border-secondary background">
+                <h1 class="display-1"><i class="fa fa-train"></i> <strong> Train Scheduler</strong></h1>
+                <p class="lead">Create some train lines to leave from your station.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="w-100 card">
+                <div class="card-header bg-secondary text-white h5">
+                    Current Train Schedule
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="h6" scope="col">Train Name</th>
+                                <th class="h6" scope="col">Destination</th>
+                                <th class="h6" scope="col">Frequency (min)</th>
+                                <th class="h6" scope="col">Next Arrival</th>
+                                <th class="h6" scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5">populate with JS</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="w-100 card">
+                <div class="card-header bg-secondary text-white h5">
+                    Add a Train
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="h6" for="train-name">Train Name</label>
+                            <input type="text" class="form-control" id="train-name" placeholder="" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label class="h6" for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label class="h6" for="train1-time">Time of First Train</label>
+                            <input type="text" class="form-control" id="train1-time" placeholder="" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label class="h6" for="frequency">Frequency of Train</label>
+                            <input type="text" class="form-control" id="frequency" placeholder="" required="required">
+                        </div>
+                        <input class="btn btn-light" id="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enable Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Logic -->
+    <script src="assets/javascript/main.js"></script>
+</body>
+
+</html>
