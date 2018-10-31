@@ -4,6 +4,6 @@ Create a list of imaginary (or real) trains, and track their next arrival times 
 
 Have fun adding them in :)
 
-##Notes
+## Notes
 
 Utilizes Bootstrap, Firebase, jQuery and Moment.js
